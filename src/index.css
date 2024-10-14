@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply overflow-x-hidden scroll-pt-7 scroll-smooth;
+  }
+  body {
+    @apply font-onest font-normal ;
+  }
+}
