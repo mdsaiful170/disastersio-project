@@ -8,6 +8,12 @@
     @apply overflow-x-hidden scroll-pt-7 scroll-smooth;
   }
   body {
-    @apply font-onest font-normal ;
+    @apply font-onest font-normal  tracking-tight;
+  }
+}
+
+@layer utilities {
+  .btn-border {
+    border: 1px solid #e4e4e7;
   }
 }

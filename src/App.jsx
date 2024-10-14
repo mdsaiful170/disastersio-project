@@ -1,21 +1,18 @@
+import "./App.css";
+import "remixicon/fonts/remixicon.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
 
 function App() {
-
-
   return (
     <>
       <BrowserRouter>
         <Routes>
-            <Route path='' element={}>
-            
-            </Route>
+          <Route path="" element={""}></Route>
         </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
