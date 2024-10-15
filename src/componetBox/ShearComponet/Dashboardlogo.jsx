@@ -1,4 +1,3 @@
-
 import { cn } from "../../../lib/utilites/cn";
 //  dashboards sapn text
 export const Sapntext = ({ className, children }) => (
