@@ -5,7 +5,7 @@ export const Container = ({ className, children }) => {
     <>
       <div
         className={cn(
-          "max-w-screen-[1300px] mx-auto md:px-10 pt-10 px-[10px] lg:px-[60px] xl:px-[70px]",
+          "max-w-[1300px] mx-auto md:px-10 pt-10 px-[10px] lg:px-[60px] xl:px-[70px]",
           className
         )}
       >

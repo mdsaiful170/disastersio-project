@@ -5,12 +5,12 @@ import { NavLink } from "react-router-dom";
 export const Mobilemenu = ({ toggler }) => {
   return (
     <>
-      <div className="absolute top-0 left-0 right-0 w-full lg:hidden block min-h-screen z-50 bg-textbgcolor p-10">
+      <div className="absolute top-0 left-0 right-0 w-full lg:hidden block min-h-screen z-50 bg-textbgcolor dark:bg-darkbgcolor p-10">
         <div className="flex items-center justify-between">
           <Logo />
           <i
             onClick={toggler}
-            className="cursor-pointer ri-close-line font-bold text-2xl cursp text-textblackcolor"
+            className="cursor-pointer dark:text-darktextdipcolor ri-close-line font-bold text-2xl cursp text-textblackcolor"
           ></i>
         </div>
 

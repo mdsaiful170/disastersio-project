@@ -5,10 +5,13 @@
 
 @layer base {
   html {
-    @apply !overflow-x-hidden scroll-pt-7 scroll-smooth;
+    @apply !overflow-x-hidden scroll-pt-7 scroll-smooth ;
   }
   body {
-    @apply font-onest font-normal  tracking-tight;
+    @apply font-onest font-normal bg-white dark:bg-darkbgcolor ;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply dark:text-darktextdipcolor;
   }
 }
 
@@ -22,8 +25,12 @@
   .btn-border {
     border: 1px solid #e4e4e7;
   }
-
- 
+  /* @media (max-width: 375px) {
+    html{
+      font-size: 50%;
+    }
+  }
+  */
 }
 
 
