@@ -1,4 +1,3 @@
-
 import { cn } from "../../../lib/utilites/cn";
 
 // logo img path
@@ -11,7 +10,10 @@ export const Logo = ({ className }) => {
       <img
         src={logo}
         alt="logo"
-        className={cn("max-w-[30%] sm:max-w-full w-fit  ", className)}
+        className={cn(
+          " sm:max-w-[90%] max-w-[85%] object-cover md:max-w-full",
+          className
+        )}
       />
     </>
   );
