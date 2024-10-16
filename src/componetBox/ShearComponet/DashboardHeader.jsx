@@ -3,12 +3,12 @@ import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
 import { Searchbox } from "../ShearComponet/Searchbox";
 import { Button } from "../ShearComponet/Button";
 import { cn } from "../../../lib/utilites/cn";
-const DashboardHeader = ({ className }) => {
+const DashboardHeader = ({ className, children }) => {
   return (
     <>
       <section
         className={cn(
-          "bg-headerbg fixed  left-0 right-0 top-0 dark:bg-darkbgcolor pt-12 md:pt-16 lg:pt-0 lg:mt-[87px]",
+          "bg-headerbg fixed   z-[1100] left-0 right-0 top-0 dark:bg-darkbgcolor pt-12 md:pt-16 lg:pt-0 lg:mt-[87px]",
           className
         )}
       >
@@ -18,17 +18,22 @@ const DashboardHeader = ({ className }) => {
               sapntext={"Welcome back"}
               dashboardtext={"Dashboard"}
             />
-
+            {children}
+            
             <div className="grid gap-[14px] grid-cols-2 md:grid-cols-3">
               <Searchbox className={"col-span-2 md:col-span-1"} />
               <Button
                 className={
-                  "bg-textbgcolor dark:bg-darkcofeecolor dark:border-darkgreencolor text-textsecondarycolor btn-border"
+                  "bg-textbgcolor dark:bg-darkcofeecolor py-1 sm:py-[10px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
                 }
               >
                 Sort By: Date modified
               </Button>
-              <Button className={"dark:bg-darkgreencolor"}>Cypher AI</Button>
+              <Button
+                className={"dark:bg-darkgreencolor dark:text-darktextdipcolor"}
+              >
+                Cypher AI
+              </Button>
             </div>
           </header>
         </Container>
