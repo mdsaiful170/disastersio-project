@@ -1,13 +1,14 @@
 import { Getstarteddata } from "../../../lib/databox";
 import { Container } from "../shearComponet/Container";
-import { Button } from "../shearComponet/Button";
 import { GetStartedcard } from "../ShearComponet/GetStartedcard";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 
 const Getstarted = () => {
+  const location = useLocation()
+  const isNewincidentspage = location.pathname.includes("newincident")
   return (
     <>
-      <section className="pt-20 md:pt-28 pb-[177px]">
+    { !isNewincidentspage && (  <section className="pt-20 md:pt-28 pb-[177px]">
         <Container className={"max-w-[815px] mx-auto"}>
           <div className="md:max-w-[580px] max-w-[550px]  mx-auto text-center space-y-[14px] lg:max-w-[613px]">
             <h2 className="md:text-[26px] text-2xl font-bold text-textblackcolor dark:text-darktextdipcolor lg:text-[32px] ">
@@ -33,14 +34,15 @@ const Getstarted = () => {
 
          <div className="text-center">
          <NavLink
-            to=""
-            className={"px-[25px] text-white rounded-[6px] text-sm font-bold bg-bgcolored  py-[17px]  inline-block mt-16 lg:mt-[85px]"}
+            to="newincident"
+            className={"px-[25px] dark:bg-darkgreencolor dark:text-darktextdipcolor tracking-wider text-white rounded-[6px] text-[12px] font-bold bg-bgcolored  py-[17px]  inline-block mt-16 lg:mt-[85px]"}
           >
             Get started
           </NavLink>
          </div>
         </Container>
-      </section>
+      </section>)}
+      <Outlet />
     </>
   );
 };

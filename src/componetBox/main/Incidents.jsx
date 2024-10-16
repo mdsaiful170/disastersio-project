@@ -3,6 +3,9 @@ import { carddatabox } from "../../../lib/databox";
 import { Container } from "../shearComponet/Container";
 import { Cardbox } from "../ShearComponet/Cardbox";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { Searchbox } from "../ShearComponet/Searchbox";
+import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
+import { Button } from "../ShearComponet/Button";
 const Incidents = () => {
   const location = useLocation();
   const isGetstartedPage = location.pathname.includes("getstarted");
@@ -10,15 +13,32 @@ const Incidents = () => {
     <>
       {/* dashboard header component */}
       {!isGetstartedPage && (
-        <DashboardHeader
-          subtext={"Home - Incidents"}
-          logoname={"Incidents"}
-          btntext={
-            <NavLink to="getstarted">
-              <p className="text-[12px] font-bold flex items-center justify-center gap-[5px] "><i className=" ri-add-line text-xl font-bold "></i> New Element</p>
-            </NavLink>
-          }
-        />
+        <DashboardHeader>
+          <Dashboardlogo className={"text-center"}
+            sapntext={"Home - Incidents"}
+            dashboardtext={"Incidents"}
+          />
+          <div className="grid gap-[14px] grid-cols-2 md:grid-cols-3">
+            <Searchbox className={"col-span-2 md:col-span-1"} />
+            <Button
+              className={
+                "bg-textbgcolor dark:bg-darkcofeecolor py-1 sm:py-[10px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
+              }
+            >
+              Sort By: Date modified
+            </Button>
+            <Button
+              className={"dark:bg-darkgreencolor dark:text-darktextdipcolor"}
+            >
+              <NavLink to="getstarted">
+                <p className="text-[12px] font-bold flex items-center justify-center gap-[5px] ">
+                  <i className=" ri-add-line text-xl font-bold "></i> New
+                  Element
+                </p>
+              </NavLink>
+            </Button>
+          </div>
+        </DashboardHeader>
       )}
 
       {/* card box */}
