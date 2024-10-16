@@ -5,7 +5,7 @@ export const Searchbox = ({ className }) => {
   return (
     <div
       className={cn(
-        "border lg:max-w-[240px] max-w-[200px] bg-textbgcolor w-full  rounded-[6px] relative flex items-center   h-[42px] gap-[5px]",
+        "border lg:max-w-[240px] md:max-w-[200px] bg-textbgcolor dark:bg-darkcofeecolor dark:border-darkgreencolor w-full  rounded-[6px] relative flex items-center   h-[42px] gap-[5px]",
         className
       )}
     >

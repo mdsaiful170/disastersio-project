@@ -13,14 +13,14 @@ export const Sapntext = ({ className, children }) => (
 
 // dashbard logo heading text component
 export const DashBoard = ({ className, children }) => (
-  <span
+  <h2
     className={cn(
       "text-xl md:text-[26px] leading-[25px] md:leading-[33px] text-textblackcolor font-bold",
       className
     )}
   >
     {children}
-  </span>
+  </h2>
 );
 
 // dashboard logo text

@@ -6,7 +6,7 @@ export const Button = ({ children, className }) => {
     <>
       <button
         className={cn(
-          " md:py-3 md:lg:px-5 py-2 text-[16px] tracking-wider font-bold px-4 text-textbgcolor bg-bgcolored rounded-[6px] lg:px-6 lg:py-4",
+          " px-[17px]    inline-block py-[10px] text-[12px] tracking-wider font-bold  text-textbgcolor bg-bgcolored rounded-[6px] ",
           className
         )}
       >
