@@ -1,6 +1,8 @@
 import { cn } from "../../../lib/utilites/cn";
 import { Button } from "./Button";
 import { useState } from "react";
+
+// message box component
 export const MsgBox = ({ className }) => {
   // message box object state store meassage
   const [messageBox, setMessaGebox] = useState([
@@ -20,7 +22,6 @@ export const MsgBox = ({ className }) => {
       text: "Lorem ipsum dolar sit general sac mascho werho",
       type: "outgoing",
     },
-
   ]);
 
   // input fild current value
@@ -57,6 +58,7 @@ export const MsgBox = ({ className }) => {
         </div>
         <div className="p-4 py-4  space-y-4   ">
           <div className="max-h-[280px] overflow-y-auto space-y-4">
+          {/* messagebox data maping */}
             {messageBox.map((res, i) => (
               <div
                 key={i}
@@ -93,6 +95,7 @@ export const MsgBox = ({ className }) => {
               <i className="ri-image-2-line"></i>
               <i className="ri-link"></i>
             </div>
+            {/* button componet */}
             <Button
               click={sendMessageHandle}
               className={

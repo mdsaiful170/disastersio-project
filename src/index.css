@@ -22,7 +22,10 @@
 
 @layer components {
   .text-active {
-    @apply font-bold text-textblackcolor;
+    @apply !font-bold text-textblackcolor dark:text-darktextdipcolor ;
+  }
+  .text-active::before{
+    @apply content-[''] absolute h-[3px] w-full bg-textblackcolor dark:bg-darktextdipcolor  -bottom-8 ;
   }
 }
 
@@ -32,6 +35,9 @@
   }
   .close-shadow {
     box-shadow: 0px 4px 48px 0px #0000000f;
+  }
+  .header-border{
+    border-bottom:  1px solid #E4E4E7;
   }
   /* @media (max-width: 375px) {
     html{

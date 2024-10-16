@@ -15,8 +15,8 @@ export default {
         textbgcolor: "#FAFAFA", //text-bg white color or text color
         bgcolored: "#F26922", // orange bg color or text color
         headerbg: "#E4E4E780", // headerbg  color or text color
-        bordercolor: "#3F3F46", //header border color
-
+        bordercolor: "#E4E4E7", //header border color
+        
         //dark colors
         bgcolorgreen: "#19362D",
         darkbgcolor: "#171212",

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import DashboardHeader from "../ShearComponet/DashboardHeader";
 import { Container } from "../shearComponet/Container";
 import { carddatabox } from "../../../lib/databox";
@@ -6,16 +6,7 @@ import { Cardbox } from "../ShearComponet/Cardbox";
 import { MsgBox } from "../ShearComponet/MsgBox";
 const Dashboard = () => {
   // header scrolling color change event
-  const [isscolled, setIsScrolled] = useState(false);
-  useEffect(() => {
-    const handlescroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handlescroll);
-    return () => {
-      window.removeEventListener("scroll", handlescroll);
-    };
-  });
+ 
   //   msg box methods
   const [isOpenmsgbox, setOpenmsgbox] = useState(false);
 
@@ -29,20 +20,24 @@ const Dashboard = () => {
     <>
       {/* header section */}
       <DashboardHeader
-        className={`${isscolled ? "bg-textbgcolor" : "bg-headerbg"}`}
+        subtext={"Welcome back"}
+        logoname={"Dashboard"}
+        btntext={"Cypher AI"}
+        
       />
 
       {/* card seaction */}
 
       <section className="lg:pt-52 md:pt-56 pt-72 pb-[177px]">
         <Container>
-          <div className="grid gap-x-[25px] gap-y-[25px] grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6">
+          <div className="grid gap-x-[25px] gap-y-[25px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6">
             {carddatabox.map((res, i) => (
               <Cardbox key={i} {...res} />
             ))}
           </div>
         </Container>
       </section>
+
       <Container className={"relative py-0  flex"}>
         {isOpenmsgbox && (
           <MsgBox className={"absolute bottom-0 right-3 lg:right-10 w-full"} />

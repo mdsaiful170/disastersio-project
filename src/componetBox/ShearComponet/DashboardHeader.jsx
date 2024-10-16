@@ -3,23 +3,43 @@ import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
 import { Searchbox } from "../ShearComponet/Searchbox";
 import { Button } from "../ShearComponet/Button";
 import { cn } from "../../../lib/utilites/cn";
-const DashboardHeader = ({ className, children }) => {
+import { useEffect, useState } from "react";
+
+// dashboard header component
+const DashboardHeader = ({
+  className,
+  children,
+  subtext,
+  logoname,
+  btntext,
+}) => {
+  const [isscolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handlescroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handlescroll);
+    return () => {
+      window.removeEventListener("scroll", handlescroll);
+    };
+  });
   return (
     <>
+     
       <section
         className={cn(
-          "bg-headerbg fixed   z-[1100] left-0 right-0 top-0 dark:bg-darkbgcolor pt-12 md:pt-16 lg:pt-0 lg:mt-[87px]",
+          `${
+            isscolled ? "bg-textbgcolor" : "bg-headerbg"
+          } fixed   z-[1100] left-0 right-0 top-0 dark:bg-darkbgcolor pt-12 md:pt-16 lg:pt-0 lg:mt-[87px]`,
           className
         )}
       >
         <Container className={"py-0 pt-8 pb-[22px]"}>
           <header className="flex items-center justify-between gap-3 md:flex-row flex-col ">
-            <Dashboardlogo
-              sapntext={"Welcome back"}
-              dashboardtext={"Dashboard"}
-            />
+            {/* header logo  */}
+            <Dashboardlogo sapntext={subtext} dashboardtext={logoname} />
             {children}
-            
+            {/* button component */}
             <div className="grid gap-[14px] grid-cols-2 md:grid-cols-3">
               <Searchbox className={"col-span-2 md:col-span-1"} />
               <Button
@@ -32,7 +52,7 @@ const DashboardHeader = ({ className, children }) => {
               <Button
                 className={"dark:bg-darkgreencolor dark:text-darktextdipcolor"}
               >
-                Cypher AI
+                {btntext}
               </Button>
             </div>
           </header>

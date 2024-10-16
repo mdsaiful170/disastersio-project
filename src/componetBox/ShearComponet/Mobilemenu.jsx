@@ -2,6 +2,7 @@ import { Logo } from "./Logo";
 import { navbaritems } from "../../../lib/databox";
 import { NavLink } from "react-router-dom";
 
+// mobile menu bar component
 export const Mobilemenu = ({ toggler }) => {
   return (
     <>
@@ -21,6 +22,7 @@ export const Mobilemenu = ({ toggler }) => {
               className="list-none mt-2 text-sm font-normal text-navlinkcolor hover:text-textsecondarycolor"
             >
               <NavLink
+                onClick={toggler}
                 to={res.herf}
                 className={({ isActive }) => {
                   isActive ? "text-active" : "text-textsecondarycolor";

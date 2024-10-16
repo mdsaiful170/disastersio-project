@@ -49,7 +49,7 @@ const Navbar = () => {
       <section
         className={`${
           isScrolled ? "bg-textbgcolor" : "bg-headerbg"
-        } bg-headerbg border-b fixed left-0 right-0 top-0  z-[1200] border-bordercolor dark:bg-darkbgcolor`}
+        } bg-headerbg border-b border-b-bordercolor dark:border-b-darkcofeecolor fixed left-0 right-0 top-0  z-[1200] dark:bg-darkbgcolor`}
       >
         <Container className={"py-0 pt-[7px]"}>
           <header className="flex items-center   py-[18px]">
@@ -64,13 +64,15 @@ const Navbar = () => {
                 {navbaritems.map((res, i) => (
                   <li
                     key={i}
-                    className="text-sm font-normal text-navlinkcolor hover:text-textsecondarycolor"
+                    className="text-sm font-normal   text-textsecondarycolor *:hover:text-textblackcolor *:dark:hover:text-darktextdipcolor"
                   >
                     <NavLink
                       to={res.herf}
-                      className={({ isActive }) => {
-                        isActive ? "text-active" : "text-textsecondarycolor";
-                      }}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-active relative"
+                          : "text-textsecondarycolor relative"
+                      }
                     >
                       {res.navtext}
                     </NavLink>
@@ -100,7 +102,7 @@ const Navbar = () => {
                 />
               </div>
               <img
-                src="img/profile.png"
+                src="/img/profile.png"
                 className="md:size-10 size-8 sm:size-9 object-cover rounded-full"
                 alt="profile-img"
                 onClick={userBoxHandle}
