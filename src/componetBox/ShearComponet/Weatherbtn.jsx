@@ -1,5 +1,5 @@
 import { cn } from "../../../lib/utilites/cn";
-import { Weather } from "./Icons";
+import { Weather } from "./icon";
 
 export const Weatherbtn = ({className, children}) => {
   return (

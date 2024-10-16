@@ -57,7 +57,7 @@ export const MsgBox = ({ className }) => {
           <h2 className="text-lg font-bold text-white">Chat with Cypher</h2>
         </div>
         <div className="p-4 py-4  space-y-4   ">
-          <div className="max-h-[280px] overflow-y-auto space-y-4">
+          <div className="max-h-[280px]  px-2 overflow-y-auto space-y-4">
           {/* messagebox data maping */}
             {messageBox.map((res, i) => (
               <div
