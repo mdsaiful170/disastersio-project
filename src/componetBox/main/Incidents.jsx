@@ -14,7 +14,8 @@ const Incidents = () => {
       {/* dashboard header component */}
       {!isGetstartedPage && (
         <DashboardHeader>
-          <Dashboardlogo className={"text-center"}
+          <Dashboardlogo
+            className={"text-center"}
             sapntext={"Home - Incidents"}
             dashboardtext={"Incidents"}
           />
@@ -27,16 +28,20 @@ const Incidents = () => {
             >
               Sort By: Date modified
             </Button>
-            <Button
-              className={"dark:bg-darkgreencolor dark:text-darktextdipcolor"}
-            >
-              <NavLink to="getstarted">
+
+            <div>
+              <NavLink
+                to="getstarted"
+                className={
+                  "dark:bg-darkgreencolor dark:text-darktextdipcolor  px-[17px] inline-block py-2 sm:py-[10px] text-[14px] tracking-wider font-bold  text-textbgcolor bg-bgcolored rounded-[6px] "
+                }
+              >
                 <p className="text-[12px] font-bold flex items-center justify-center gap-[5px] ">
                   <i className=" ri-add-line text-xl font-bold "></i> New
-                  Element
+                  Elements
                 </p>
               </NavLink>
-            </Button>
+            </div>
           </div>
         </DashboardHeader>
       )}

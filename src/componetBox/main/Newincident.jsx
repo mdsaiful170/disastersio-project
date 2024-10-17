@@ -5,18 +5,23 @@ import DashboardHeader from "../ShearComponet/DashboardHeader";
 import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
 
 const Newincident = () => {
-    const navigate = useNavigate();
-    const getstarteddPage= () => {
-        navigate("/incidents/getstarted")
-    }
+  const navigate = useNavigate();
+  const getstarteddPage = () => {
+    navigate("/incidents/getstarted");
+  };
   return (
     <>
       <DashboardHeader>
-        <Dashboardlogo
-         className={"text-center"}
-          sapntext={"Home - Incidents"}
-          dashboardtext={"Incidents"}
-        />
+        <div className="flex items-center gap-3 ">
+          <div>
+            <i className="ri-close-line size-5 text-center leading-5 rounded-full bg-textbgcolor text-lg font-bold p-2 dark:bg-darkcofeecolor dark:text-darktextdipcolor cursor-pointer btn-border dark:border-darkgreencolor"></i>
+          </div>
+          <Dashboardlogo
+            className={""}
+            sapntext={"Home - Incidents - New Incident"}
+            dashboardtext={"Incidents"}
+          />
+        </div>
         <div className="grid gap-[14px] grid-cols-2">
           <Button
             click={getstarteddPage}
@@ -26,21 +31,25 @@ const Newincident = () => {
           >
             Back
           </Button>
-          <Button
-            className={"dark:bg-darkgreencolor dark:text-darktextdipcolor"}
-          >
-            <NavLink to="getstarted">
+
+          <div>
+            <NavLink
+              to="nextpage"
+              className={
+                "dark:bg-darkgreencolor dark:text-darktextdipcolor  px-[17px] inline-block py-2 sm:py-[10px] text-[12px] tracking-wider font-bold  text-textbgcolor bg-bgcolored rounded-[6px] "
+              }
+            >
               <p className="text-[12px] font-bold flex items-center justify-center gap-[5px] ">
-                <i className=" ri-add-line text-xl font-bold "></i> New Element
+                <i className=" ri-add-line text-xl font-bold "></i> Next Page
               </p>
             </NavLink>
-          </Button>
+          </div>
         </div>
       </DashboardHeader>
 
       <section className="pt-52  pb-[177px]">
         <Container className={"max-w-[753px] mx-auto"}>
-          <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor in iure laborum velit soluta perspiciatis commodi eos impedit assumenda, quisquam deserunt labore ullam iste fugiat. Reiciendis sequi amet eligendi?</p></div>
+          <div></div>
         </Container>
       </section>
     </>

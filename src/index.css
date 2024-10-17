@@ -8,7 +8,7 @@
     @apply !overflow-x-hidden scroll-pt-7 scroll-smooth;
   }
   body {
-    @apply font-onest font-normal bg-white dark:bg-darkbgcolor;
+    @apply font-onest font-normal bg-white dark:bg-darkbgcolor text-textsecondarycolor dark:text-darktextcolor;
   }
   h1,
   h2,
@@ -22,10 +22,10 @@
 
 @layer components {
   .text-active {
-    @apply !font-bold text-textblackcolor dark:text-darktextdipcolor ;
+    @apply !font-bold text-textblackcolor dark:text-darktextdipcolor;
   }
-  .text-active::before{
-    @apply content-[''] absolute h-[3px] w-full bg-textblackcolor dark:bg-darktextdipcolor  -bottom-8 ;
+  .text-active::before {
+    @apply content-[''] absolute h-[3px] w-full bg-textblackcolor dark:bg-darktextdipcolor  -bottom-8;
   }
 }
 
@@ -36,8 +36,8 @@
   .close-shadow {
     box-shadow: 0px 4px 48px 0px #0000000f;
   }
-  .header-border{
-    border-bottom:  1px solid #E4E4E7;
+  .header-border {
+    border-bottom: 1px solid #e4e4e7;
   }
   /* @media (max-width: 375px) {
     html{
