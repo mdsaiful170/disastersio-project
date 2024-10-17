@@ -13,8 +13,10 @@ const Newincident = () => {
   const getstarteddPage = () => {
     navigate("/incidents/getstarted");
   };
-
-
+  const navigate2 = useNavigate();
+  const ClosePageHandel = () => {
+    navigate2("/incidents/getstarted");
+  };
   const location = useLocation();
   const isNextpageone = location.pathname.includes("nextpageone");
   return (
@@ -24,7 +26,10 @@ const Newincident = () => {
         <DashboardHeader>
           <div className="flex items-center gap-3 ">
             <div>
-              <i className="ri-close-line size-5 text-center leading-5 rounded-full bg-textbgcolor text-lg font-bold p-2 dark:bg-darkcofeecolor dark:text-darktextdipcolor cursor-pointer btn-border dark:border-darkgreencolor"></i>
+              <i
+                onClick={ClosePageHandel}
+                className="ri-close-line size-5 text-center leading-5 rounded-full bg-textbgcolor text-lg font-bold p-2 dark:bg-darkcofeecolor dark:text-darktextdipcolor cursor-pointer btn-border dark:border-darkgreencolor"
+              ></i>
             </div>
             {/* dashboard logo */}
             <Dashboardlogo

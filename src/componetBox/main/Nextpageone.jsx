@@ -3,19 +3,28 @@ import { Button } from "../ShearComponet/Button";
 import { Container } from "../shearComponet/Container";
 import DashboardHeader from "../ShearComponet/DashboardHeader";
 import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
-import { Inputfrom } from "../ShearComponet/Inputfrom";
+import {
+  Inputfrom,
+  InputTextareabox,
+  InputTextbox,
+} from "../ShearComponet/Inputfrom";
 
 const Nextpageone = () => {
   const navigate = useNavigate();
   const NewIncdientPagehandle = () => {
     navigate("/incidents/getstarted/newincident");
   };
+  const navigate2 = useNavigate();
+  const ClosePageHandel = () => {
+    navigate2("/incidents/getstarted");
+  };
   return (
+
     <>
       <DashboardHeader>
         <div className="flex items-center gap-3 ">
           <div>
-            <i className="ri-close-line size-5 text-center leading-5 rounded-full bg-textbgcolor text-lg font-bold p-2 dark:bg-darkcofeecolor dark:text-darktextdipcolor cursor-pointer btn-border dark:border-darkgreencolor"></i>
+            <i onClick={ClosePageHandel} className="ri-close-line size-5 text-center leading-5 rounded-full bg-textbgcolor text-lg font-bold p-2 dark:bg-darkcofeecolor dark:text-darktextdipcolor cursor-pointer btn-border dark:border-darkgreencolor"></i>
           </div>
           {/* dashboard logo */}
           <Dashboardlogo
@@ -58,8 +67,18 @@ const Nextpageone = () => {
       <section className="md:pt-52  pb-[177px]">
         <Container>
           <div className={"max-w-[756px] mx-auto"}>
-            <Inputfrom />
-            <Inputfrom />
+            <Inputfrom
+              title={"Let’s give the incident a title?"}
+              subtext={"Make a title that will easily identify the incidents"}
+              componet={<InputTextbox />}
+            />
+            <Inputfrom
+              title={"Describe what happened during the incident?"}
+              subtext={
+                "Share some information about the incident. The when, where, how. "
+              }
+              componet={<InputTextareabox />}
+            />
           </div>
         </Container>
       </section>

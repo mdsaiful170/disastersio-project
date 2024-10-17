@@ -1,11 +1,10 @@
-import React from "react";
-
+//mobile user details box component
 export const Mobileuserditailse = ({ remover, ref }) => {
   return (
     <>
       <div
         ref={ref}
-        className="absolute top-[60px] right-[5px] dark:bg-darkcofeecolor bg-white rounded shadow-md p-2 z-10 sm:hidden"
+        className="absolute top-[65px] right-[10px] dark:bg-darkcofeecolor bg-white rounded shadow-md p-2 z-10 sm:hidden"
       >
         <div className="flex items-center justify-between cursor-pointer ">
           <h4 className="text-[#A1A1AA] text-sm font-semibold">Usman Zafar</h4>
