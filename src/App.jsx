@@ -8,7 +8,6 @@ import Getstarted from "./componetBox/main/Getstarted";
 import ErrorPage from "./componetBox/main/ErrorPage";
 import Newincident from "./componetBox/main/Newincident";
 import Nextpageone from "./componetBox/main/Nextpageone";
-// import Nextpagetwo from "./componetBox/main/Nextlastpage";
 import Nextlastpage from "./componetBox/main/Nextlastpage";
 
 function App() {

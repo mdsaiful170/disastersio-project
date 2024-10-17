@@ -1,6 +1,7 @@
-import { Logo } from "./Logo";
+
 import { navbaritems } from "../../../lib/databox";
 import { NavLink } from "react-router-dom";
+import { Logo } from "./Logo";
 
 // mobile menu bar component
 export const Mobilemenu = ({ toggler }) => {

@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { Button } from "../ShearComponet/Button";
 import { Container } from "../shearComponet/Container";
 import { Map } from "../ShearComponet/Map";
@@ -17,7 +17,7 @@ const Nextlastpage = () => {
   };
   const navigate3 = useNavigate();
   const backHomepage = () => {
-    navigate2("/");
+    navigate3("/");
   };
   return (
     <>
