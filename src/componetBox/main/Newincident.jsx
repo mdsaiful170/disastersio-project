@@ -35,7 +35,7 @@ const Newincident = () => {
             <Dashboardlogo
               className={""}
               sapntext={"Home - Incidents - New Incident"}
-              dashboardtext={"Incidents"}
+              dashboardtext={"New Incident"}
             />
           </div>
 

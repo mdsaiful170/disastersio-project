@@ -19,7 +19,7 @@ const DashboardHeader = ({ className, children }) => {
       <section
         className={cn(
           `${
-            isscolled ? "bg-textbgcolor" : "bg-headerbg"
+            isscolled ? "bg-textbgcolor" : "bg-[#E4E4E780]"
           } md:fixed   md:z-[1100] md:left-0 md:right-0 md:top-0 dark:bg-darkbgcolor pt-14 md:pt-16 lg:pt-0 lg:mt-[87px] border-b border-b-darktextdipcolor/50 dark:border-b dark:border-darkgreencolor/50`,
           className
         )}
