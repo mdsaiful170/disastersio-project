@@ -16,7 +16,7 @@ export const Searchbox = ({ className }) => {
         type="search"
         required
         placeholder="Search incident"
-        className="h-full outline-none px-1 rounded-e-[6px] placeholder:text-textsecondarycolor text-sm   text-textsecondarycolor  lg:w-[100%] w-full bg-transparent border-0"
+        className="h-full outline-none px-1 rounded-e-[6px] placeholder:text-textsecondarycolor text-sm   text-textsecondarycolor  lg:w-[100%] w-full bg-transparent border-0 dark:text-darktextdipcolor"
       />
     </div>
   );

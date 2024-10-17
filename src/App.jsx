@@ -7,6 +7,7 @@ import Incidents from "./componetBox/main/Incidents";
 import Getstarted from "./componetBox/main/Getstarted";
 import ErrorPage from "./componetBox/main/ErrorPage";
 import Newincident from "./componetBox/main/Newincident";
+import Nextpageone from "./componetBox/main/Nextpageone";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
 
             <Route path="incidents" element={<Incidents />}>
               <Route path="getstarted" element={<Getstarted />}>
-                <Route path="newincident" element={<Newincident />} />
+                <Route path="newincident" element={<Newincident />}>
+                  <Route path="nextpageone" element={<Nextpageone />} />
+                </Route>
               </Route>
             </Route>
 
