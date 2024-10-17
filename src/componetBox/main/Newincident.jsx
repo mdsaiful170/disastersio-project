@@ -73,7 +73,7 @@ const Newincident = () => {
 
       {/* active newincident card box */}
       {!isNextpageone && (
-        <section className="md:pt-52  pb-[177px]">
+        <section className=" pb-[177px]">
           <Container>
             <div className={"max-w-[756px] mx-auto"}>
               <h3 className="mx-auto sm:max-w-full sm:w-full text-textblackcolor text-xl  text-left sm:text-2xl font-bold pb-6">

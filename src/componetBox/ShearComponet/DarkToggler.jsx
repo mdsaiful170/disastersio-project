@@ -3,7 +3,7 @@ export const DarkToggler = (props) => {
     <>
       <label className="inline-flex items-center relative">
         <input className="peer hidden" id="toggle" type="checkbox" {...props} />
-        <div className="relative w-[55px] cursor-pointer h-[25px] bg-textbgcolor peer-checked:bg-darkcofeecolor rounded-full after:absolute after:content-[''] after:w-[20px] after:h-[20px] after:bg-gradient-to-r from-orange-500 to-yellow-400 peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[2.5px] after:left-[2.5px] active:after:w-[25px] peer-checked:after:left-[52.5px] peer-checked:after:translate-x-[-100%] shadow-sm duration-300 after:duration-300 after:shadow-md"></div>
+        <div className="relative w-[55px] cursor-pointer btn-border dark:border-darkgreencolor h-[25px] bg-textbgcolor peer-checked:bg-darkcofeecolor rounded-full after:absolute after:content-[''] after:w-[20px] after:h-[20px] after:bg-gradient-to-r from-orange-500 to-yellow-400 peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[2.5px] after:left-[2.5px] active:after:w-[25px] peer-checked:after:left-[52.5px] peer-checked:after:translate-x-[-100%] shadow-sm duration-300 after:duration-300 after:shadow-md"></div>
         <svg
           height="0"
           width="50"

@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "../ShearComponet/Button";
 import { Container } from "../shearComponet/Container";
 import DashboardHeader from "../ShearComponet/DashboardHeader";
@@ -18,10 +18,14 @@ const Nextpageone = () => {
   const ClosePageHandel = () => {
     navigate2("/incidents/getstarted");
   };
+
+  const location = useLocation();
+  const isnextLastpage = location.pathname.includes("nextlastpage");
+
   return (
 
     <>
-      <DashboardHeader>
+      {!isnextLastpage && (<DashboardHeader>
         <div className="flex items-center gap-3 ">
           <div>
             <i onClick={ClosePageHandel} className="ri-close-line size-5 text-center leading-5 rounded-full bg-textbgcolor text-lg font-bold p-2 dark:bg-darkcofeecolor dark:text-darktextdipcolor cursor-pointer btn-border dark:border-darkgreencolor"></i>
@@ -52,7 +56,7 @@ const Nextpageone = () => {
           {/*  nextpage navlink button  */}
           <div>
             <NavLink
-              to="nextpageone"
+              to="nextlastpage"
               className={
                 "dark:bg-darkgreencolor dark:text-darktextdipcolor  px-[17px] inline-block py-2 sm:py-[10px] text-[12px] tracking-wider font-bold  text-textbgcolor bg-bgcolored rounded-[6px] "
               }
@@ -63,8 +67,8 @@ const Nextpageone = () => {
             </NavLink>
           </div>
         </div>
-      </DashboardHeader>
-      <section className="md:pt-52  pb-[177px]">
+      </DashboardHeader>)}
+      {!isnextLastpage && (<section className=" pb-[177px]">
         <Container>
           <div className={"max-w-[756px] mx-auto"}>
             <Inputfrom
@@ -81,7 +85,9 @@ const Nextpageone = () => {
             />
           </div>
         </Container>
-      </section>
+      </section>)}
+
+      <Outlet />
     </>
   );
 };

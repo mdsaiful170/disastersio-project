@@ -20,7 +20,7 @@ const Incidents = () => {
             dashboardtext={"Incidents"}
           />
           <div className="grid gap-[14px] grid-cols-2 md:grid-cols-3">
-            <Searchbox className={"col-span-2 md:col-span-1"} />
+            <Searchbox placetext={"Search incident"} className={"col-span-2 md:col-span-1"} />
             <Button
               className={
                 "bg-textbgcolor dark:bg-darkcofeecolor py-1 sm:py-[10px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
@@ -48,7 +48,7 @@ const Incidents = () => {
 
       {/* card box */}
       {!isGetstartedPage && (
-        <section className="lg:pt-52 md:pt-56  pb-[177px]">
+        <section className="pb-[177px]">
           <Container>
             <div className="grid gap-x-[25px] gap-y-[25px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6">
               {carddatabox.map((res, i) => (

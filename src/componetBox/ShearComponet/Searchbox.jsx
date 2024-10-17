@@ -1,7 +1,7 @@
 import { cn } from "../../../lib/utilites/cn";
 
 //  search componet
-export const Searchbox = ({ className }) => {
+export const Searchbox = ({ className, placetext }) => {
   return (
     <div
       className={cn(
@@ -15,7 +15,7 @@ export const Searchbox = ({ className }) => {
       <input
         type="search"
         required
-        placeholder="Search incident"
+        placeholder={placetext}
         className="h-full outline-none px-1 rounded-e-[6px] placeholder:text-textsecondarycolor text-sm   text-textsecondarycolor  lg:w-[100%] w-full bg-transparent border-0 dark:text-darktextdipcolor"
       />
     </div>

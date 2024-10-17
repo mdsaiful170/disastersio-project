@@ -7,7 +7,7 @@ export const Map = ({ className, children }) => {
       <div className={cn("relative overflow-hidden", className)}>
         <img
           src={mapImg}
-          className="w-full max-w-full object-cover"
+          className="w-full rounded-[10px] max-w-full object-cover"
           alt="mapimg"
         />
         {children}

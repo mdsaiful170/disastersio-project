@@ -8,6 +8,8 @@ import Getstarted from "./componetBox/main/Getstarted";
 import ErrorPage from "./componetBox/main/ErrorPage";
 import Newincident from "./componetBox/main/Newincident";
 import Nextpageone from "./componetBox/main/Nextpageone";
+// import Nextpagetwo from "./componetBox/main/Nextlastpage";
+import Nextlastpage from "./componetBox/main/Nextlastpage";
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
             <Route path="incidents" element={<Incidents />}>
               <Route path="getstarted" element={<Getstarted />}>
                 <Route path="newincident" element={<Newincident />}>
-                  <Route path="nextpageone" element={<Nextpageone />} />
+                  <Route path="nextpageone" element={<Nextpageone />}>
+                    <Route path="nextlastpage" element={<Nextlastpage />} />
+                  </Route>
                 </Route>
               </Route>
             </Route>
