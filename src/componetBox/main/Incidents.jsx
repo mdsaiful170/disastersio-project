@@ -48,7 +48,7 @@ const Incidents = () => {
 
       {/* card box */}
       {!isGetstartedPage && (
-        <section className="lg:pt-52 md:pt-56 pt-72 pb-[177px]">
+        <section className="lg:pt-52 md:pt-56  pb-[177px]">
           <Container>
             <div className="grid gap-x-[25px] gap-y-[25px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6">
               {carddatabox.map((res, i) => (

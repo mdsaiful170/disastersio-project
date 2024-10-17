@@ -61,10 +61,10 @@ const Newincident = () => {
       </DashboardHeader>
 
       {/* active newincident card box */}
-      <section className="pt-52  pb-[177px]">
+      <section className="md:pt-52  pb-[177px]">
         <Container>
           <div className={"max-w-[756px] mx-auto"}>
-            <h3 className="text-textblackcolor md:text-2xl font-bold pb-6">
+            <h3 className="text-textblackcolor text-xl text-center md:text-left sm:text-2xl font-bold pb-6">
               Which of these best describes the incident?
             </h3>
             <div className="grid place-items-center items-start md:grid-cols-4 sm:grid-cols-3 grid-cols-2 lg:grid-cols-4  gap-3">
