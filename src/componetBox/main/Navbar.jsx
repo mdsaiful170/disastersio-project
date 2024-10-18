@@ -1,14 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-import { Container } from "../shearComponet/Container";
-
 import { navbaritems } from "../../../lib/databox";
-
 import { Mobilemenu } from "../shearComponet/Mobilemenu";
 import { DarkToggler } from "../shearComponet/DarkToggler";
 import { Mobileuserdetail } from "../shearComponet/Mobileuserdetail";
 import { useEffect, useState } from "react";
 import { Logo } from "../usecompo/Logo";
+import { Container } from "../shearComponet/Container";
 
 // ##########################
 //   Navbar page
