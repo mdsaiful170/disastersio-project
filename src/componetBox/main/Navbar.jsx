@@ -9,7 +9,6 @@ import { DarkToggler } from "../ShearComponet/DarkToggler";
 import { Mobileuserditailse } from "../ShearComponet/Mobileuserdetail";
 import { useEffect, useState } from "react";
 import { Logo } from "../ShearComponet/Logo";
-import { Active } from "../ShearComponent/Icon";
 // ##########################
 //   Navbar page
 // ##########################
@@ -99,9 +98,7 @@ const Navbar = () => {
               {/* profile div */}
               <div className=" cursor-pointer relative inline-block rounded-full px-[7px] py-[8px] bg-textbgcolor btn-border dark:border-darkgreencolor dark:bg-darkcofeecolor">
                 <span className="size-2 md:size-[10px] bg-[#4ADE80] absolute top-0 right-0 btn-border rounded-full"></span>
-                <Active
-                  className={"md:size-6 size-4  dark:text-darktextdipcolor"}
-                />
+                 <img src="/img/active.png" className="dark:filter dark:brightness-25 dark:invert" alt="" />
               </div>
               <img
                 src="/img/profile.png"
