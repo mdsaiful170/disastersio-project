@@ -1,8 +1,9 @@
 import { cn } from "../../../lib/utilites/cn";
 import { Button } from "./Button";
 import { useState } from "react";
-
+// ##########################
 // message box component
+// ##########################
 export const MsgBox = ({ className }) => {
   // message box object state store meassage
   const [messageBox, setMessaGebox] = useState([
@@ -58,7 +59,7 @@ export const MsgBox = ({ className }) => {
         </div>
         <div className="p-4 py-4  space-y-4   ">
           <div className="max-h-[280px]  px-2 overflow-y-auto space-y-4">
-          {/* messagebox data maping */}
+            {/* messagebox data maping */}
             {messageBox.map((res, i) => (
               <div
                 key={i}

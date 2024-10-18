@@ -4,12 +4,14 @@ import { Container } from "../ShearComponet/Container";
 import { Logo } from "../shearComponet/Logo";
 
 import { navbaritems } from "../../../lib/databox";
-import { Active } from "../ShearComponet/icon";
+import { Active } from "../ShearComponet/Icon";
 import { Mobilemenu } from "../ShearComponet/Mobilemenu";
 import { DarkToggler } from "../ShearComponet/DarkToggler";
 import { Mobileuserditailse } from "../ShearComponet/Mobileuserdetail";
 import { useEffect, useState } from "react";
-
+// ##########################
+//   Navbar page
+// ##########################
 const Navbar = () => {
   // mobile menu bar state
   const [isnavActive, setnavActive] = useState(false);

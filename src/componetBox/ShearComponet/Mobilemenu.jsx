@@ -1,9 +1,11 @@
-
 import { navbaritems } from "../../../lib/databox";
 import { NavLink } from "react-router-dom";
 import { Logo } from "./Logo";
 
+// ##########################
 // mobile menu bar component
+// ##########################
+
 export const Mobilemenu = ({ toggler }) => {
   return (
     <>
@@ -20,14 +22,14 @@ export const Mobilemenu = ({ toggler }) => {
           {navbaritems.map((res, i) => (
             <li
               key={i}
-              className="list-none mt-2 text-sm font-normal text-navlinkcolor hover:text-textsecondarycolor"
+              className="list-none mt-4 text-sm font-normal text-navlinkcolor hover:text-textsecondarycolor"
             >
               <NavLink
                 onClick={toggler}
                 to={res.herf}
-                className={({ isActive }) => {
-                  isActive ? "text-active" : "text-textsecondarycolor";
-                }}
+                className={({ isActive }) =>
+                  isActive ? "text-active " : "text-textsecondarycolor relative"
+                }
               >
                 {res.navtext}
               </NavLink>

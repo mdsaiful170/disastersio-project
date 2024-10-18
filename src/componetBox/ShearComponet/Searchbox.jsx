@@ -1,11 +1,12 @@
 import { cn } from "../../../lib/utilites/cn";
-
+// ##########################
 //  search componet
+// ##########################
 export const Searchbox = ({ className, placetext }) => {
   return (
     <div
       className={cn(
-        "border lg:max-w-[240px] lg:w-full md:w-full md:max-w-[200px] bg-textbgcolor dark:bg-darkcofeecolor dark:border-darkgreencolor w-full  rounded-[6px] relative flex items-center    h-[45px] gap-[5px]",
+        "border md:max-w-[190px] max-w-full  bg-textbgcolor dark:bg-darkcofeecolor dark:border-darkgreencolor   rounded-[6px] relative flex items-center h-[45px] gap-[5px]",
         className
       )}
     >

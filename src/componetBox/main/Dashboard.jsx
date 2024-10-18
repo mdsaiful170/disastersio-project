@@ -8,6 +8,8 @@ import { Searchbox } from "../ShearComponet/Searchbox";
 import { Button } from "../ShearComponet/Button";
 import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
 
+
+
 const Dashboard = () => {
   // header scrolling color change event
 
@@ -23,11 +25,7 @@ const Dashboard = () => {
   return (
     <>
       {/* header section */}
-      <DashboardHeader
-        subtext={"Welcome back"}
-        logoname={"Dashboard"}
-        className={"text-center"}
-      >
+      <DashboardHeader>
         <Dashboardlogo sapntext={"Welcome back"} dashboardtext={"Dashboard"} />
         <div className="grid gap-[14px] grid-cols-2 md:grid-cols-3">
           <Searchbox
@@ -36,13 +34,13 @@ const Dashboard = () => {
           />
           <Button
             className={
-              "bg-textbgcolor dark:bg-darkcofeecolor py-1 sm:py-[10px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
+              "bg-textbgcolor dark:bg-darkcofeecolor  py-[8px] sm:py-[10px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
             }
           >
             Sort By: Date modified
           </Button>
           <Button
-            className={"dark:bg-darkgreencolor dark:text-darktextdipcolor"}
+            className={"dark:bg-darkgreencolor   dark:text-darktextdipcolor"}
           >
             Cypher AI
           </Button>

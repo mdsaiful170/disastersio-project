@@ -1,8 +1,11 @@
 import { Getstarteddata } from "../../../lib/databox";
-import { Container } from "../shearComponet/Container";
+import { Container } from "../ShearComponet/Container";
+
 import { GetStartedcard } from "../ShearComponet/GetStartedcard";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
-
+// ##########################
+//   GetStarted page
+// ##########################
 const Getstarted = () => {
   const location = useLocation()
   const isNewincidentspage = location.pathname.includes("newincident")

@@ -2,8 +2,9 @@ import { cn } from "../../../lib/utilites/cn";
 
 // logo img path
 const logo = "/img/logo.png";
-
+// ##########################
 // main logo component
+// ##########################
 export const Logo = ({ className }) => {
   return (
     <>

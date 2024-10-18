@@ -6,6 +6,10 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { Searchbox } from "../ShearComponet/Searchbox";
 import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
 import { Button } from "../ShearComponet/Button";
+
+// ##########################
+//   Incident page
+// ##########################
 const Incidents = () => {
   const location = useLocation();
   const isGetstartedPage = location.pathname.includes("getstarted");
@@ -17,10 +21,12 @@ const Incidents = () => {
           <Dashboardlogo
             sapntext={"Home - Incidents"}
             dashboardtext={"Incidents"}
-            
           />
           <div className="grid gap-[14px] grid-cols-2 md:grid-cols-3">
-            <Searchbox placetext={"Search incident"} className={"col-span-2 md:col-span-1"} />
+            <Searchbox
+              placetext={"Search incident"}
+              className={"col-span-2 md:col-span-1"}
+            />
             <Button
               className={
                 "bg-textbgcolor dark:bg-darkcofeecolor py-1 sm:py-[10px] dark:border-darkgreencolor text-textsecondarycolor btn-border"

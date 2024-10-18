@@ -1,5 +1,7 @@
 import { cn } from "../../../lib/utilites/cn";
-
+// ##########################
+//   Getstarted componet
+// ##########################
 export const GetStartedcard = (props) => {
   const { title,img, subtitle, id, className } = props || {};
   return (

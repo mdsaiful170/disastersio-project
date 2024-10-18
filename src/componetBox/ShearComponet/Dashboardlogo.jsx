@@ -1,9 +1,16 @@
 import { cn } from "../../../lib/utilites/cn";
+// ##########################
+//   DashboardLog componet
+// ##########################
+
+
+
+
 //  dashboards sapn text
 export const Sapntext = ({ className, children }) => (
   <span
     className={cn(
-      " pb-[6px] text-base font-normal text-textsecondarycolor",
+      " pb-[6px] text-[12px] font-normal text-textsecondarycolor dark:text-darktextcolor",
       className
     )}
   >

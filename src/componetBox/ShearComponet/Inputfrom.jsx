@@ -1,5 +1,9 @@
 import { cn } from "../../../lib/utilites/cn";
 
+// ##########################
+//   Input text  componet
+// ##########################
+
 export const InputTextbox = ({ className }) => (
   <input
     className={cn(
@@ -23,6 +27,9 @@ export const InputTextareabox = ({ className }) => (
   ></textarea>
 );
 
+// ##########################
+//   input Textarea componet
+// ##########################
 export const Inputfrom = (props) => {
   const { title, subtext, componet } = props || {};
   return (

@@ -1,5 +1,7 @@
 import { cn } from "../../../lib/utilites/cn";
-
+// ##########################
+//   NewIncidentcard card componet
+// ##########################
 export const NewIncidentcard = (props) => {
   const { icon, title, click, active } = props || {};
   return (

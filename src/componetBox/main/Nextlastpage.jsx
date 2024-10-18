@@ -1,10 +1,14 @@
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../ShearComponet/Button";
 import { Map } from "../ShearComponet/Map";
 import { Searchbox } from "../ShearComponet/Searchbox";
 import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
 import DashboardHeader from "../ShearComponet/DashboardHeader";
 import { Container } from "../ShearComponet/Container";
+
+// ##########################
+//   Next Last page  
+// ##########################
 
 const Nextlastpage = () => {
   const navigate = useNavigate();
@@ -16,15 +20,18 @@ const Nextlastpage = () => {
     navigate2("/incidents/getstarted");
   };
   const navigate3 = useNavigate();
-  const backHomepage = () => {
-    navigate3("/");
+  const GotolocationPage = () => {
+    navigate3("/location");
   };
   return (
     <>
-     <DashboardHeader>
+      <DashboardHeader>
         <div className="flex items-center gap-3 ">
           <div>
-            <i onClick={ClosePageHandel} className="ri-close-line size-5 text-center leading-5 rounded-full bg-textbgcolor text-lg font-bold p-2 dark:bg-darkcofeecolor dark:text-darktextdipcolor cursor-pointer btn-border dark:border-darkgreencolor"></i>
+            <i
+              onClick={ClosePageHandel}
+              className="ri-close-line size-5 text-center leading-5 rounded-full bg-textbgcolor text-lg font-bold p-2 dark:bg-darkcofeecolor dark:text-darktextdipcolor cursor-pointer btn-border dark:border-darkgreencolor"
+            ></i>
           </div>
           {/* dashboard logo */}
           <Dashboardlogo
@@ -34,7 +41,7 @@ const Nextlastpage = () => {
           />
         </div>
 
-        <div className=" bg-[#E5E7EB] w-[80%] md:w-1/3  lg:w-full lg:max-w-[527px]  flex items-center justify-start rounded-full dark:bg-darktextcolor ">
+        <div className=" bg-[#E5E7EB] w-[80%] md:w-[60%] lg:w-full lg:max-w-[527px]  flex items-center justify-start rounded-full dark:bg-darktextcolor ">
           <span className=" w-[98px] block h-[5px] bg-bgcolored dark:bg-darkgreencolor rounded-s-full"></span>
         </div>
 
@@ -50,9 +57,12 @@ const Nextlastpage = () => {
           </Button>
 
           {/*  nextpage navlink button  */}
-           <Button click={backHomepage} className={"sm:px-9 text-[12px] sm:py-[15px]"}>
-           Finished
-           </Button>
+          <Button
+            click={GotolocationPage}
+            className={"sm:px-9 text-[12px] sm:py-[15px]"}
+          >
+            Finished
+          </Button>
         </div>
       </DashboardHeader>
       <section className="pb-[150px]">
@@ -68,9 +78,14 @@ const Nextlastpage = () => {
               </p>
             </div>
 
+
+{/* Map componet box */}
             <Map>
               <div className="absolute top-5 w-full max-w-[270px] left-[10px]">
-                <Searchbox placetext={"Enter incident address or GPS"} className={"dark:bg-darkgreencolor"} />
+                <Searchbox
+                  placetext={"Enter incident address or GPS"}
+                  className={"dark:bg-darkgreencolor"}
+                />
                 <Searchbox placetext={"Pinpoint damage"} className={" mt-2"} />
               </div>
             </Map>

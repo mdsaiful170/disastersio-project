@@ -6,7 +6,9 @@ import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
 import { NewIncidentcard } from "../ShearComponet/NewIncidentcard";
 import { newIncidentdata } from "../../../lib/databox";
 import { useState } from "react";
-
+// ##########################
+//   NewIncident page
+// ##########################
 const Newincident = () => {
   const [active, setActive] = useState(11);
   const navigate = useNavigate();
@@ -39,7 +41,7 @@ const Newincident = () => {
             />
           </div>
 
-          <div className=" bg-[#E5E7EB] w-[80%] md:w-1/3  lg:w-full lg:max-w-[527px]  flex items-center justify-start rounded-full dark:bg-darktextcolor ">
+          <div className=" bg-[#E5E7EB] w-[80%] md:w-[60%] lg:w-full lg:max-w-[527px]  flex items-center justify-start rounded-full dark:bg-darktextcolor ">
             <span className=" w-[98px] block h-[5px] bg-bgcolored dark:bg-darkgreencolor rounded-s-full"></span>
           </div>
 

@@ -1,8 +1,11 @@
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Container } from "../ShearComponet/Container";
 import { Button } from "../ShearComponet/Button";
 
 
+// ##########################
+//   Error page
+// ##########################
 const ErrorPage = () => {
   const navigat = useNavigate();
   const pageHandel = () => {
@@ -10,6 +13,7 @@ const ErrorPage = () => {
   };
   return (
     <>
+  
       <section className="pt-28">
         <Container>
           <div className="text-center mx-auto dark:text-darktextdipcolor text-textblackcolor w-[260px] space-y-5">
@@ -21,7 +25,12 @@ const ErrorPage = () => {
               The page youre looking for might have been removed, had its name
               changed, or is temporarily unavailable.
             </p>
-            <Button click={pageHandel} className={"dark:bg-darkgreencolor text-darktextdipcolor"}>Back to page</Button>
+            <Button
+              click={pageHandel}
+              className={"dark:bg-darkgreencolor text-darktextdipcolor"}
+            >
+              Back to page
+            </Button>
           </div>
         </Container>
       </section>
