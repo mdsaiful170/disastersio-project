@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Container } from "../shearComponet/Containerbox.jsx";
+import { Container } from "../shearcomponet/Containerbox.jsx";
 import { carddatabox } from "../../../lib/databox";
-import { MsgBox } from "../shearComponet/MsgBox";
-import { Searchbox } from "../shearComponet/Searchbox";
+import { MsgBox } from "../shearcomponet/MsgBox.jsx";
+import { Searchbox } from "../shearcomponet/Searchbox.jsx";
 import { Button } from "../usecompo/Button";
-import { Dashboardlogo } from "../shearComponet/Dashboardlogo";
-import DashboardHeader from "../shearComponet/DashboardHeader";
-import { Cardbox } from "../shearComponet/Cardbox";
+import { Dashboardlogo } from "../shearcomponet/Dashboardlogo.jsx";
+import DashboardHeader from "../shearcomponet/DashboardHeader.jsx";
+import { Cardbox } from "../shearcomponet/Cardbox.jsx";
 
 
 

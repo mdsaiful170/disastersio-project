@@ -1,11 +1,11 @@
-import DashboardHeader from "../shearComponet/DashboardHeader";
+import DashboardHeader from "../shearcomponet/DashboardHeader";
 import { carddatabox } from "../../../lib/databox";
-import { Container } from "../shearComponet/Containerbox";
+import { Container } from "../shearcomponet/Containerbox";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
-import { Searchbox } from "../shearComponet/Searchbox";
-import { Dashboardlogo } from "../shearComponet/Dashboardlogo";
+import { Searchbox } from "../shearcomponet/Searchbox";
+import { Dashboardlogo } from "../shearcomponet/Dashboardlogo";
 import { Button } from "../usecompo/Button";
-import { Cardbox } from "../shearComponet/Cardbox";
+import { Cardbox } from "../shearcomponet/Cardbox";
 
 // ##########################
 //   Incident page

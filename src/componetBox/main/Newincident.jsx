@@ -1,9 +1,9 @@
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "../usecompo/Button";
-import { Container } from "../shearComponet/Containerbox";
-import DashboardHeader from "../shearComponet/DashboardHeader";
-import { Dashboardlogo } from "../shearComponet/Dashboardlogo";
-import { NewIncidentcard } from "../shearComponet/NewIncidentcard";
+import { Container } from "../shearcomponet/Containerbox";
+import DashboardHeader from "../shearcomponet/DashboardHeader";
+import { Dashboardlogo } from "../shearcomponet/Dashboardlogo";
+import { NewIncidentcard } from "../shearcomponet/NewIncidentcard";
 import { newIncidentdata } from "../../../lib/databox";
 import { useState } from "react";
 // ##########################
