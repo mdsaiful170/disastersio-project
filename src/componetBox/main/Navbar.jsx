@@ -9,7 +9,7 @@ import { DarkToggler } from "../ShearComponet/DarkToggler";
 import { Mobileuserditailse } from "../ShearComponet/Mobileuserdetail";
 import { useEffect, useState } from "react";
 import { Logo } from "../ShearComponet/Logo";
-import { Active } from "../ShearComponet/Icon";
+import { Active } from "../ShearComponent/Icon";
 // ##########################
 //   Navbar page
 // ##########################
@@ -57,8 +57,8 @@ const Navbar = () => {
         <Container className={"py-0 pt-[7px]"}>
           <header className="flex items-center   py-[18px]">
             {/* logo div */}
-           
-              <Logo />
+
+            <Logo />
 
             {/* nav list div */}
             <nav className="hidden lg:block mx-auto">
