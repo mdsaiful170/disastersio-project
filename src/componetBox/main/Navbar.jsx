@@ -3,12 +3,13 @@ import { Outlet } from "react-router-dom";
 import { Container } from "../ShearComponet/Container";
 
 import { navbaritems } from "../../../lib/databox";
-import { Active } from "../ShearComponet/Icon";
+
 import { Mobilemenu } from "../ShearComponet/Mobilemenu";
 import { DarkToggler } from "../ShearComponet/DarkToggler";
 import { Mobileuserditailse } from "../ShearComponet/Mobileuserdetail";
 import { useEffect, useState } from "react";
 import { Logo } from "../ShearComponet/Logo";
+import { Active } from "../ShearComponet/Icon";
 // ##########################
 //   Navbar page
 // ##########################
