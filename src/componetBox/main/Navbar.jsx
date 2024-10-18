@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-import { Container } from "../shearComponet/Container";
+import { Container } from "../ShearComponet/Container";
 import { Logo } from "../shearComponet/Logo";
 
 import { navbaritems } from "../../../lib/databox";

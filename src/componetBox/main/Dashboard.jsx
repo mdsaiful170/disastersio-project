@@ -1,6 +1,6 @@
 import { useState } from "react";
 import DashboardHeader from "../ShearComponet/DashboardHeader";
-import { Container } from "../shearComponet/Container";
+import { Container } from "../ShearComponet/Container";
 import { carddatabox } from "../../../lib/databox";
 import { Cardbox } from "../ShearComponet/Cardbox";
 import { MsgBox } from "../ShearComponet/MsgBox";

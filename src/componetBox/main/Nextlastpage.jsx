@@ -1,10 +1,10 @@
 import {  useNavigate } from "react-router-dom";
 import { Button } from "../ShearComponet/Button";
-import { Container } from "../shearComponet/Container";
 import { Map } from "../ShearComponet/Map";
 import { Searchbox } from "../ShearComponet/Searchbox";
 import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
 import DashboardHeader from "../ShearComponet/DashboardHeader";
+import { Container } from "../ShearComponet/Container";
 
 const Nextlastpage = () => {
   const navigate = useNavigate();

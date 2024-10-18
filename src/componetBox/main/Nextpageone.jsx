@@ -1,6 +1,6 @@
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "../ShearComponet/Button";
-import { Container } from "../shearComponet/Container";
+import { Container } from "../ShearComponet/Container";
 import DashboardHeader from "../ShearComponet/DashboardHeader";
 import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
 import {

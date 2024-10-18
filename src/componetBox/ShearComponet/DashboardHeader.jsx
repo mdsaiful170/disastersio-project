@@ -1,5 +1,6 @@
-import { Container } from "../shearComponet/Container";
+
 import { cn } from "../../../lib/utilites/cn";
+import { Container } from "./Container";
 
 // dashboard header component
 const DashboardHeader = ({ className, children }) => {

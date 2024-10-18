@@ -1,6 +1,6 @@
 import DashboardHeader from "../ShearComponet/DashboardHeader";
 import { carddatabox } from "../../../lib/databox";
-import { Container } from "../shearComponet/Container";
+import { Container } from "../ShearComponet/Container";
 import { Cardbox } from "../ShearComponet/Cardbox";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { Searchbox } from "../ShearComponet/Searchbox";
@@ -33,7 +33,7 @@ const Incidents = () => {
               <NavLink
                 to="getstarted"
                 className={
-                  "dark:bg-darkgreencolor dark:text-darktextdipcolor  px-[17px] inline-block py-2 sm:py-[10px] text-[14px] tracking-wider font-bold  text-textbgcolor bg-bgcolored rounded-[6px] "
+                  "dark:bg-darkgreencolor dark:text-darktextdipcolor  px-[17px] inline-block py-2 sm:py-[10px] text-[14px] tracking-wider font-bold  text-textbgcolor bg-bgcolored rounded-[6px] lg:w-full "
                 }
               >
                 <p className="text-[12px] font-bold flex items-center justify-center gap-[5px] ">
