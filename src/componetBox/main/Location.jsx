@@ -17,7 +17,7 @@ import {
   LocationCardbox,
   LocationCostbox,
   LocationMap,
-} from "../ShearComponet/locationcomponet";
+} from "../ShearComponet/Locationcomponet";
 
 // ##########################
 //   Location page
