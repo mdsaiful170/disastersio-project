@@ -1,5 +1,6 @@
 import { cn } from "../../../lib/utilites/cn";
-import { BulidingIcon } from "../ShearComponet/Icon";
+import { BulidingIcon } from "./Icon";
+
 // ##########################
 // location cost componet
 // ##########################

@@ -1,6 +1,6 @@
 import { navbaritems } from "../../../lib/databox";
 import { NavLink } from "react-router-dom";
-import { Logo } from "../ShearComponet/Logo";
+import { Logo } from "./Logo";
 
 // ##########################
 // mobile menu bar component
