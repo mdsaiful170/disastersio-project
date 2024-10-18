@@ -27,6 +27,7 @@ export const DashBoard = ({ className, children }) => (
 export const Dashboardlogo = ({
   className,
   children,
+  styletext,
   sapntext,
   dashboardtext,
 }) => {
@@ -34,7 +35,7 @@ export const Dashboardlogo = ({
     <>
       <div className={cn("text-left flex flex-col ", className)}>
         <Sapntext>{sapntext}</Sapntext>
-        <DashBoard>{dashboardtext}</DashBoard>
+        <DashBoard className={styletext}>{dashboardtext}</DashBoard>
       </div>
     </>
   );

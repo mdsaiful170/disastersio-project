@@ -15,9 +15,9 @@ const Incidents = () => {
       {!isGetstartedPage && (
         <DashboardHeader>
           <Dashboardlogo
-            className={"text-center"}
             sapntext={"Home - Incidents"}
             dashboardtext={"Incidents"}
+            
           />
           <div className="grid gap-[14px] grid-cols-2 md:grid-cols-3">
             <Searchbox placetext={"Search incident"} className={"col-span-2 md:col-span-1"} />

@@ -1,10 +1,23 @@
-
 import { cn } from "../../../lib/utilites/cn";
 import { Container } from "./Container";
 
 // dashboard header component
-const DashboardHeader = ({ className, children }) => {
+export const Headerbox = ({ className, children }) => {
+  return (
+    <>
+      <header
+        className={cn(
+          "flex items-center justify-between gap-3 md:flex-row flex-col ",
+          className
+        )}
+      >
+        {children}
+      </header>
+    </>
+  );
+};
 
+const DashboardHeader = ({ className, children , sylhetClass }) => {
   return (
     <>
       <section
@@ -14,9 +27,9 @@ const DashboardHeader = ({ className, children }) => {
         )}
       >
         <Container className={"py-0 pt-8 pb-[22px]"}>
-          <header className="flex items-center justify-between gap-3 md:flex-row flex-col ">
+          <Headerbox className={sylhetClass} >
             {children}
-          </header>
+          </Headerbox>
         </Container>
       </section>
     </>

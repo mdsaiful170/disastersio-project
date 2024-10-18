@@ -9,6 +9,7 @@ import ErrorPage from "./componetBox/main/ErrorPage";
 import Newincident from "./componetBox/main/Newincident";
 import Nextpageone from "./componetBox/main/Nextpageone";
 import Nextlastpage from "./componetBox/main/Nextlastpage";
+import Location from "./componetBox/main/Location";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
                 </Route>
               </Route>
             </Route>
-
+            <Route path="location" element={<Location />} />
             <Route path="*" element={<ErrorPage />} />
           </Route>
         </Routes>
