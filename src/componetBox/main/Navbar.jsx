@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { Container } from "../ShearComponet/Container";
-import { Logo } from "../shearComponet/Logo";
+
 import { navbaritems } from "../../../lib/databox";
 import { Active } from "../ShearComponet/Icon";
 import { Mobilemenu } from "../ShearComponet/Mobilemenu";
 import { DarkToggler } from "../ShearComponet/DarkToggler";
 import { Mobileuserditailse } from "../ShearComponet/Mobileuserdetail";
 import { useEffect, useState } from "react";
+import { Logo } from "../ShearComponet/Logo";
 // ##########################
 //   Navbar page
 // ##########################
@@ -55,9 +56,8 @@ const Navbar = () => {
         <Container className={"py-0 pt-[7px]"}>
           <header className="flex items-center   py-[18px]">
             {/* logo div */}
-            <a href="#">
+           
               <Logo />
-            </a>
 
             {/* nav list div */}
             <nav className="hidden lg:block mx-auto">
