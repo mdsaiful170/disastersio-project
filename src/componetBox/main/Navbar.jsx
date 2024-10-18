@@ -6,7 +6,7 @@ import { DarkToggler } from "../shearComponet/DarkToggler";
 import { Mobileuserdetail } from "../shearComponet/Mobileuserdetail";
 import { useEffect, useState } from "react";
 import { Logo } from "../usecompo/Logo";
-import { Container } from "../shearComponet/Container";
+import { Container } from "../shearComponet/Containerbox";
 
 // ##########################
 //   Navbar page

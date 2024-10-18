@@ -1,6 +1,6 @@
 import DashboardHeader from "../shearComponet/DashboardHeader";
 import { carddatabox } from "../../../lib/databox";
-import { Container } from "../shearComponet/Container";
+import { Container } from "../shearComponet/Containerbox";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { Searchbox } from "../shearComponet/Searchbox";
 import { Dashboardlogo } from "../shearComponet/Dashboardlogo";

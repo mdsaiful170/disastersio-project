@@ -2,7 +2,7 @@ import { Button } from "../usecompo/Button";
 import DashboardHeader from "../shearComponet/DashboardHeader";
 import { Dashboardlogo } from "../shearComponet/Dashboardlogo";
 import { Searchbox } from "../shearComponet/Searchbox";
-import { Container } from "../shearComponet/Container";
+import { Container } from "../shearComponet/Containerbox";
 
 import {
   LocationActivityeCarddata,
