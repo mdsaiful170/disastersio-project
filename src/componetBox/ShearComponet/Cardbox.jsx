@@ -1,5 +1,5 @@
 import { cn } from "../../../lib/utilites/cn";
-import { Weatherbtn } from "./Weatherbtn.jsx";
+import { Weatherbtn } from "../usecompo/Weatherbtn";
 
 // ##########################
 //   card componet

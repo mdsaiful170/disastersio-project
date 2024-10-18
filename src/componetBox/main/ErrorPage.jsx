@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { Container } from "../ShearComponet/Container";
-import { Button } from "../ShearComponet/Button";
+import {Container} from "../shearComponet/Container";
+import { Button } from "../usecompo/Button";
 
 
 // ##########################

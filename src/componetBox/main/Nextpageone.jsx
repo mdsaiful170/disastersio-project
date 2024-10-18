@@ -1,13 +1,13 @@
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
-import { Button } from "../ShearComponet/Button";
-import { Container } from "../ShearComponet/Container";
-import DashboardHeader from "../ShearComponet/DashboardHeader";
-import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
+import { Button } from "../usecompo/Button";
+import { Container } from "../shearComponet/Container";
+import DashboardHeader from "../shearComponet/DashboardHeader";
+import { Dashboardlogo } from "../shearComponet/Dashboardlogo";
 import {
   Inputfrom,
   InputTextareabox,
   InputTextbox,
-} from "../ShearComponet/Inputfrom";
+} from "../shearComponet/Inputfrom";
 
 // ##########################
 //   NextpageOne page

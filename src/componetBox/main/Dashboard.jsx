@@ -1,12 +1,12 @@
 import { useState } from "react";
-import DashboardHeader from "../ShearComponet/DashboardHeader";
-import { Container } from "../ShearComponet/Container";
+import DashboardHeader from "../shearComponet/DashboardHeader";
+import { Container } from "../shearComponet/Container";
 import { carddatabox } from "../../../lib/databox";
-import { Cardbox } from "../ShearComponet/Cardbox";
-import { MsgBox } from "../ShearComponet/MsgBox";
-import { Searchbox } from "../ShearComponet/Searchbox";
-import { Button } from "../ShearComponet/Button";
-import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
+import { Cardbox } from "../shearComponet/Cardbox";
+import { MsgBox } from "../shearComponet/MsgBox";
+import { Searchbox } from "../shearComponet/Searchbox";
+import { Button } from "../usecompo/Button";
+import { Dashboardlogo } from "../shearComponet/Dashboardlogo";
 
 
 

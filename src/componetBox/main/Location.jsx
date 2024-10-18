@@ -1,8 +1,8 @@
-import { Button } from "../ShearComponet/Button";
-import DashboardHeader from "../ShearComponet/DashboardHeader";
-import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
-import { Searchbox } from "../ShearComponet/Searchbox";
-import { Container } from "../ShearComponet/Container";
+import { Button } from "../usecompo/Button";
+import DashboardHeader from "../shearComponet/DashboardHeader";
+import { Dashboardlogo } from "../shearComponet/Dashboardlogo";
+import { Searchbox } from "../shearComponet/Searchbox";
+import { Container } from "../shearComponet/Container";
 
 import {
   LocationActivityeCarddata,
@@ -17,7 +17,7 @@ import {
   LocationCardbox,
   LocationCostbox,
   LocationMap,
-} from "../ShearComponet/Locationcomponet";
+} from "../shearComponet/Locationcomponet";
 
 // ##########################
 //   Location page

@@ -1,5 +1,5 @@
 import { cn } from "../../../lib/utilites/cn";
-import { BulidingIcon } from "./Icon.jsx";
+import { BulidingIcon } from "../usecompo/Icon";
 
 // ##########################
 // location cost componet

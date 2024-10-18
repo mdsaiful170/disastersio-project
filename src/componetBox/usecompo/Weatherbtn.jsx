@@ -1,5 +1,5 @@
 import { cn } from "../../../lib/utilites/cn";
-import { Weather } from "./Icon.jsx";
+import { Weather } from "./Icon";
 // ##########################
 //   Weatherbtn component
 // ##########################
