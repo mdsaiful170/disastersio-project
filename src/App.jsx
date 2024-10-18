@@ -1,15 +1,15 @@
 import "./App.css";
 import "remixicon/fonts/remixicon.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./componetBox/main/Navbar";
-import Dashboard from "./componetBox/main/Dashboard";
-import Incidents from "./componetBox/main/Incidents";
-import Getstarted from "./componetBox/main/Getstarted";
-import ErrorPage from "./componetBox/main/ErrorPage";
-import Newincident from "./componetBox/main/Newincident";
-import Nextpageone from "./componetBox/main/Nextpageone";
-import Nextlastpage from "./componetBox/main/Nextlastpage";
-import Location from "./componetBox/main/Location";
+import Navbar from "./componetbox/main/Navbar";
+import Dashboard from "./componetbox/main/Dashboard";
+import Incidents from "./componetbox/main/Incidents";
+import Getstarted from "./componetbox/main/Getstarted";
+import ErrorPage from "./componetbox/main/ErrorPage";
+import Newincident from "./componetbox/main/Newincident";
+import Nextpageone from "./componetbox/main/Nextpageone";
+import Nextlastpage from "./componetbox/main/Nextlastpage";
+import Location from "./componetbox/main/Location";
 
 function App() {
   return (
