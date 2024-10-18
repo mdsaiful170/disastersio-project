@@ -1,5 +1,5 @@
 import { cn } from "../../../lib/utilites/cn";
-import { Container } from "./Container";
+import { Container } from "./Container.jsx";
 
 // ##########################
 //   Dashboard header  componet
