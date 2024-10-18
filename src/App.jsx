@@ -5,7 +5,7 @@ import Navbar from "./componetbox/main/Navbar";
 import Dashboard from "./componetbox/main/Dashboard";
 import Incidents from "./componetbox/main/Incidents";
 import Getstarted from "./componetbox/main/Getstarted";
-import ErrorPage from "./componetbox/main/ErrorPage";
+import Errorpage from "./componetbox/main/Errorpage";
 import Newincident from "./componetbox/main/Newincident";
 import Nextpageone from "./componetbox/main/Nextpageone";
 import Nextlastpage from "./componetbox/main/Nextlastpage";
@@ -29,7 +29,7 @@ function App() {
               </Route>
             </Route>
             <Route path="location" element={<Location />} />
-            <Route path="*" element={<ErrorPage />} />
+            <Route path="*" element={<Errorpage />} />
           </Route>
         </Routes>
       </BrowserRouter>

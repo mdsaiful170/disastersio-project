@@ -7,7 +7,7 @@ import { Container } from "../shearcomponet/Containerbox";
 // ##########################
 //   Error page
 // ##########################
-const ErrorPage = () => {
+const Errorpage = () => {
   const navigat = useNavigate();
   const pageHandel = () => {
     navigat("/");
@@ -39,4 +39,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default Errorpage;
