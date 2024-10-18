@@ -7,7 +7,7 @@ import DashboardHeader from "../ShearComponet/DashboardHeader";
 import { Container } from "../ShearComponet/Container";
 
 // ##########################
-//   Next Last page  
+//   Next Last page
 // ##########################
 
 const Nextlastpage = () => {
@@ -78,8 +78,7 @@ const Nextlastpage = () => {
               </p>
             </div>
 
-
-{/* Map componet box */}
+            {/* Map componet box */}
             <Map>
               <div className="absolute top-5 w-full max-w-[270px] left-[10px]">
                 <Searchbox
@@ -87,7 +86,13 @@ const Nextlastpage = () => {
                   className={"dark:bg-darkgreencolor"}
                 />
                 <Searchbox placetext={"Pinpoint damage"} className={" mt-2"} />
+               
               </div>
+              <img
+                  src="/img/big-location-icon.png"
+                  className="absolute top-[34%] right-[38%]"
+                  alt=""
+                />
             </Map>
           </div>
         </Container>

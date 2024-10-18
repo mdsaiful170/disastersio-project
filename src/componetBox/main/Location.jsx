@@ -3,20 +3,21 @@ import DashboardHeader from "../ShearComponet/DashboardHeader";
 import { Dashboardlogo } from "../ShearComponet/Dashboardlogo";
 import { Searchbox } from "../ShearComponet/Searchbox";
 import { Container } from "../ShearComponet/Container";
-import {
-  Horizontalline,
-  LocationActiveDocumentCard,
-  LocationCardbox,
-  LocationCostbox,
-  LocationMap,
-} from "../ShearComponet/Locationcomponet";
-import { LocationArticlebox } from "../ShearComponet/Locationcomponet";
+
 import {
   LocationActivityeCarddata,
   LocationCarddata,
   LocationDocumentCarddata,
 } from "../../../lib/databox";
 import { useNavigate } from "react-router-dom";
+import {
+  Horizontalline,
+  LocationActiveDocumentCard,
+  LocationArticlebox,
+  LocationCardbox,
+  LocationCostbox,
+  LocationMap,
+} from "../ShearComponet/locationcomponet";
 
 // ##########################
 //   Location page
@@ -172,7 +173,12 @@ const Location = () => {
             {/* map */}
             <section className="col-span-12  lg:col-span-5">
               <div>
-                <LocationMap subtitle={"Incident Map"} subtitle2={"Start 19.1232, -118.233     End 19.3245, -119.2323"} />
+                <LocationMap
+                  subtitle={"Incident Map"}
+                  subtitle2={
+                    "Start 19.1232, -118.233     End 19.3245, -119.2323"
+                  }
+                />
               </div>
             </section>
           </div>
