@@ -6,7 +6,7 @@ import { navbaritems } from "../../../lib/databox";
 
 import { Mobilemenu } from "../shearComponet/Mobilemenu";
 import { DarkToggler } from "../shearComponet/DarkToggler";
-import { Mobileuserditailse } from "../shearComponet/Mobileuserdetail";
+import { Mobileuserdetail } from "../shearComponet/Mobileuserdetail";
 import { useEffect, useState } from "react";
 import { Logo } from "../usecompo/Logo";
 
@@ -119,7 +119,7 @@ const Navbar = () => {
             </div>
 
             {/* user detail box */}
-            {userBox && <Mobileuserditailse remover={userBoxHandle} />}
+            {userBox && <Mobileuserdetail remover={userBoxHandle} />}
           </header>
         </Container>
         {isnavActive && <Mobilemenu toggler={MenuBarHandle} />}

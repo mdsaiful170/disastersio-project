@@ -1,7 +1,7 @@
 // ##########################
 //mobile user details box component
 // ##########################
-export const Mobileuserditailse = ({ remover, ref }) => {
+export const Mobileuserdetail = ({ remover, ref }) => {
   return (
     <>
       <div
