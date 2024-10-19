@@ -1,7 +1,6 @@
-import { Getstarteddata } from "../../../lib/databox";
-import { Container } from "../shearcomponet/Containerbox";
-
-import { GetStartedcard } from "../shearcomponet/GetStartedcard";
+import { Getstarteddata } from "../../lib/databox";
+import { Container } from "../componetbox/Containerbox";
+import { GetStartedcard } from "../componetbox/GetStartedcard";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 // ##########################
 //   GetStarted page

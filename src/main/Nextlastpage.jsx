@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "../usecompo/Button";
-import { Map } from "../shearcomponet/Map";
-import { Searchbox } from "../shearcomponet/Searchbox";
-import { Dashboardlogo } from "../shearcomponet/Dashboardlogo";
-import DashboardHeader from "../shearcomponet/DashboardHeader";
-import { Container } from "../shearcomponet/Containerbox";
+import { Map } from "../componetbox/Map";
+import { Searchbox } from "../componetbox/Searchbox";
+import { Dashboardlogo } from "../componetbox/Dashboardlogo";
+import DashboardHeader from "../componetbox/DashboardHeader";
+import { Container } from "../componetbox/Containerbox";
 
 // ##########################
 //   Next Last page

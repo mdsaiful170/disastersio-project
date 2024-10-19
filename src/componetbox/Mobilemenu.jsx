@@ -1,4 +1,4 @@
-import { navbaritems } from "../../../lib/databox";
+import { navbaritems } from "../../lib/databox";
 import { NavLink } from "react-router-dom";
 import { Logo } from "../usecompo/Logo";
 

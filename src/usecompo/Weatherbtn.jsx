@@ -1,4 +1,4 @@
-import { cn } from "../../../lib/utilites/cn";
+import {cn} from "../../lib/utilites/cn"
 import { Weather } from "./Icon";
 // ##########################
 //   Weatherbtn component

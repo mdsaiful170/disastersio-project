@@ -1,14 +1,12 @@
 import { useState } from "react";
-import { Container } from "../shearcomponet/Containerbox.jsx";
-import { carddatabox } from "../../../lib/databox";
-import { MsgBox } from "../shearcomponet/MsgBox.jsx";
-import { Searchbox } from "../shearcomponet/Searchbox.jsx";
+import { Container } from "../componetbox/Containerbox";
+import { carddatabox } from "../../lib/databox";
+import { MsgBox } from "../componetbox/MsgBox";
+import { Searchbox } from "../componetbox/Searchbox";
 import { Button } from "../usecompo/Button";
-import { Dashboardlogo } from "../shearcomponet/Dashboardlogo.jsx";
-import DashboardHeader from "../shearcomponet/DashboardHeader.jsx";
-import { Cardbox } from "../shearcomponet/Cardbox.jsx";
-
-
+import { Dashboardlogo } from "../componetbox/Dashboardlogo";
+import { Cardbox } from "../componetbox/Cardbox";
+import DashboardHeader from "../componetbox/DashboardHeader";
 
 const Dashboard = () => {
   // header scrolling color change event

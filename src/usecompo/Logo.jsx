@@ -1,4 +1,4 @@
-import { cn } from "../../../lib/utilites/cn";
+import {cn} from "../../lib/utilites/cn"
 
 // logo img path
 const logo = "/img/logo.png";

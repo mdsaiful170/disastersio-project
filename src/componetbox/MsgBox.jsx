@@ -1,5 +1,5 @@
-import { cn } from "../../../lib/utilites/cn";
-import { Button } from "../usecompo/Button";
+import {cn} from "../../lib/utilites/cn"
+import {Button} from "../usecompo/Button"
 import { useState } from "react";
 // ##########################
 // message box component

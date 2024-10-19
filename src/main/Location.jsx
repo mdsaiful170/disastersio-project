@@ -1,14 +1,14 @@
 import { Button } from "../usecompo/Button";
-import DashboardHeader from "../shearcomponet/DashboardHeader";
-import { Dashboardlogo } from "../shearcomponet/Dashboardlogo";
-import { Searchbox } from "../shearcomponet/Searchbox";
-import { Container } from "../shearcomponet/Containerbox";
+import DashboardHeader from "../componetbox/DashboardHeader";
+import { Dashboardlogo } from "../componetbox/Dashboardlogo";
+import { Searchbox } from "../componetbox/Searchbox";
+import { Container } from "../componetbox/Containerbox";
 
 import {
   LocationActivityeCarddata,
   LocationCarddata,
   LocationDocumentCarddata,
-} from "../../../lib/databox";
+} from "../../lib/databox";
 import { useNavigate } from "react-router-dom";
 import {
   Horizontalline,
@@ -17,7 +17,7 @@ import {
   LocationCardbox,
   LocationCostbox,
   LocationMap,
-} from "../shearcomponet/Locationcomponet";
+} from "../componetbox/Locationcomponet";
 
 // ##########################
 //   Location page

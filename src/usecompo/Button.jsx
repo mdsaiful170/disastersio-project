@@ -1,4 +1,4 @@
-import { cn } from "../../../lib/utilites/cn";
+import {cn} from "../../lib/utilites/cn"
 
 // button component
 export const Button = ({ children, className ,click }) => {
