@@ -29,7 +29,7 @@ const Incidents = () => {
             />
             <Button
               className={
-                "bg-textbgcolor dark:bg-darkcofeecolor py-1 sm:py-[10px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
+                "bg-textbgcolor dark:bg-darkcofeecolor py-[14px] px-[5px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
               }
             >
               Sort By: Date modified
@@ -39,7 +39,7 @@ const Incidents = () => {
               <NavLink
                 to="getstarted"
                 className={
-                  "dark:bg-darkgreencolor dark:text-darktextdipcolor  px-[17px] inline-block py-2 sm:py-[10px] text-[14px] tracking-wider font-bold  text-textbgcolor bg-bgcolored rounded-[6px] lg:w-full "
+                  "dark:bg-darkgreencolor dark:text-darktextdipcolor  px-[17px] inline-block py-[12px] sm:py-[10px] text-[14px] tracking-wider font-bold  text-textbgcolor bg-bgcolored rounded-[6px] lg:w-full "
                 }
               >
                 <p className="text-[12px] font-bold flex items-center justify-center gap-[5px] ">

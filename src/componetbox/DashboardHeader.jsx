@@ -25,7 +25,7 @@ const DashboardHeader = ({ className, children }) => {
     <>
       <section
         className={cn(
-          ` bg-headerbg   dark:bg-darkbgcolor pt-14 md:pt-16 lg:pt-0 lg:mt-[87px] border-b border-b-darktextdipcolor/50 dark:border-b dark:border-darkgreencolor/50`,
+          ` bg-headerbg   dark:bg-darkbgcolor pt-16 md:pt-16 lg:pt-0 lg:mt-[87px] border-b border-b-darktextdipcolor/50 dark:border-b dark:border-darkgreencolor/50`,
           className
         )}
       >

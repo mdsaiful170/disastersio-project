@@ -32,7 +32,7 @@ const Dashboard = () => {
           />
           <Button
             className={
-              "bg-textbgcolor dark:bg-darkcofeecolor  py-[8px] sm:py-[10px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
+              "bg-textbgcolor dark:bg-darkcofeecolor px-1  py-[14px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
             }
           >
             Sort By: Date modified

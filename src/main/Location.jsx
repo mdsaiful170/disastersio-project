@@ -43,7 +43,7 @@ const Location = () => {
               DR-4699 March 2023 Severe Storms
             </div>
           }
-          styletext={"lg:text-[26px]"}
+          styletext={" md:text-lg text-[17px] lg:text-[26px]"}
         />
         <div className="grid gap-[14px] grid-cols-2 md:grid-cols-3">
           <Searchbox
@@ -52,7 +52,7 @@ const Location = () => {
           />
           <Button
             className={
-              "bg-textbgcolor dark:bg-darkcofeecolor py-1 sm:py-[10px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
+              "bg-textbgcolor dark:bg-darkcofeecolor px-[5px] py-[14px] dark:border-darkgreencolor text-textsecondarycolor btn-border"
             }
           >
             <span className="text-textsecondarycolor/75 dark:text-darktextdipcolor/75">

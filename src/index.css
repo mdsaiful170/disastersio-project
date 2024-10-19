@@ -27,6 +27,7 @@
   .text-active::before {
     @apply content-[''] absolute h-[3px] w-full bg-textblackcolor dark:bg-darktextdipcolor  -bottom-8;
   }
+
 }
 
 @layer utilities {
@@ -39,10 +40,7 @@
   .header-border {
     border-bottom: 1px solid #e4e4e7;
   }
-  /* @media (max-width: 375px) {
-    html{
-      font-size: 50%;
-    }
-  }
-  */
+
+
+ 
 }

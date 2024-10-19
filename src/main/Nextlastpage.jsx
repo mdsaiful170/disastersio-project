@@ -90,7 +90,7 @@ const Nextlastpage = () => {
               </div>
               <img
                   src="/img/big-location-icon.png"
-                  className="absolute top-[34%] right-[38%]"
+                  className="absolute  sm:top-[34%] sm:right-[38%]  top-[53%] right-[38%]"
                   alt=""
                 />
             </Map>
